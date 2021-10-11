@@ -4,24 +4,19 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * 
+ * Unit test for simple App.
  */
-public class MaximumTest {
+public class MaximumTest
+{
     @Test
-    public void intMax() {
-        int actualValue = Maximum.testMaximum(10, 20, 5);
-        Assert.assertEquals(20, actualValue);
+    public void intMax1() {
+        int actualValue = Maximum.getmaximum(12,14,15);
+        Assert.assertEquals(15,actualValue);
     }
 
     @Test
-    public void floatMax() {
-        float actualValue = Maximum.testMaximum(11f,52f,36f);
-        Assert.assertEquals(52f,actualValue,0);
-    }
-
-    @Test
-    public void stringMax() {
-        String actualValue = Maximum.testMaximum("ABC","def","xyz");
-        Assert.assertEquals("xyz",actualValue);
+    public void intMax2() {
+        int actualValue = Maximum.getmaximum(1000,545,746);
+        Assert.assertEquals(1000,actualValue);
     }
 }
